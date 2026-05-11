@@ -6,10 +6,10 @@ pipeline {
     }
     stages {
         stage('Checkout') {
-            steps {
-                git 'https://github.com/4kanksh/demo-app.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/4kanksh/demo-app.git'
+    }
+}
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
