@@ -12,7 +12,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/4kanksh/demo-app.git',
-                    credentialsId: 'github-token'
+                   
             }
         }
 
