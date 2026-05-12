@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/4kanksh/demo-app.git',
+                    url: 'https://github.com/4kanksh/demo-app.git'
                    
             }
         }
